@@ -12,6 +12,7 @@ form.addEventListener("submit", function (e) {
 
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
   const dob = document.getElementById("dob").value;
   const gender = document.querySelector('input[name="gender"]:checked').value;
   const message = document.getElementById("messageText").value;
@@ -19,6 +20,7 @@ form.addEventListener("submit", function (e) {
   document.getElementById("result").innerHTML = `
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
     <p><strong>Date of Birth:</strong> ${dob}</p>
     <p><strong>Gender:</strong> ${gender}</p>
     <p><strong>Message:</strong> ${message}</p>
