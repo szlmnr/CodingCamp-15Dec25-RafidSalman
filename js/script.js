@@ -21,7 +21,7 @@ form.addEventListener("submit", function (e) {
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Phone:</strong> ${phone}</p>
-    <p><strong>Date Sent:</strong> ${dob}</p>
+    <p><strong>Date of Birth:</strong> ${dob}</p>
     <p><strong>Gender:</strong> ${gender}</p>
     <p><strong>Message:</strong> ${message}</p>
   `;
