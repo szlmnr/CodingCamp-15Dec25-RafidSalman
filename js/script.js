@@ -24,3 +24,18 @@ form.addEventListener("submit", function (e) {
     <p><strong>Message:</strong> ${message}</p>
   `;
 });
+
+const learnBtn = document.getElementById('learn-btn');
+const profileInfo = document.getElementById('profile-info');
+
+learnBtn.addEventListener('click', () => {
+  if(profileInfo.style.maxHeight && profileInfo.style.maxHeight !== "0px") {
+    // collapse
+    profileInfo.style.maxHeight = "0px";
+    profileInfo.style.opacity = "0";
+  } else {
+    // expand
+    profileInfo.style.maxHeight = profileInfo.scrollHeight + "px";
+    profileInfo.style.opacity = "1";
+  }
+});
