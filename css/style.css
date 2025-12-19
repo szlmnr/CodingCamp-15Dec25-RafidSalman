@@ -1,0 +1,15 @@
+/* Custom reusable components */
+
+.hq-circle {
+  width: 96px;
+  height: 96px;
+  border: 1px solid #000;
+  border-radius: 9999px;
+  margin: auto;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+}

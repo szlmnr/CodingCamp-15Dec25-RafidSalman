@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rafid Company</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-800">
+
+<!-- NAVBAR -->
+<header class="flex justify-between items-center px-8 py-4 border-b">
+  <div class="font-bold text-xl">RC</div>
+  <nav class="space-x-6">
+    <a href="#home" class="hover:underline">Home</a>
+    <a href="#profile" class="hover:underline">Our Profile</a>
+     <a href="#portfolio" class="hover:underline">Portfolio</a>
+    <a href="#message" class="hover:underline">Message Us</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="px-8 py-20">
+  <h1 class="text-3xl font-bold mb-2">
+    Hi <span id="userName">Name</span>, Welcome To Website
+  </h1>
+  <p class="text-gray-500">We are glad to have you here. Explore our services and offerings.</p>
+</section>
+
+<!-- HERO BANNER -->
+<section
+  class="relative h-screen flex items-center justify-center text-white"
+  style="background-image: url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg'); background-size: cover; background-position: center;"
+>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-6">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+      Rafid Company
+    </h1>
+
+    <p class="max-w-2xl mx-auto text-lg text-gray-200">
+      Creative solutions built with precision, consistency, and trust.
+    </p>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="px-8 py-20 border-t">
+  <h2 class="text-xl font-bold mb-6">Portfolio</h2>
+
+  <p class="text-gray-600 max-w-3xl leading-relaxed">
+    <strong>Rafid Company</strong> offers professional creative services designed to
+    support branding, promotion, and visual communication.
+  </p>
+</section>
+
+<!-- HEADQUARTER -->
+<section id="headquarter" class="px-8 py-16 border-t">
+  <h2 class="text-xl font-bold mb-8">Our Headquarter</h2>
+
+  <div class="flex flex-wrap gap-12">
+    
+    <!-- Jakarta -->
+    <div class="text-center">
+      <img
+        src="https://media-cdn.tripadvisor.com/media/photo-s/0f/c1/75/68/photo0jpg.jpg"
+        alt="Monumen Nasional Jakarta"
+        class="w-32 h-32 object-cover rounded-full mx-auto"
+      />
+      <p class="mt-3 font-medium">Jakarta</p>
+    </div>
+
+    <!-- Bandung -->
+    <div class="text-center">
+      <img
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ca/76/1e/frontage.jpg?w=1400&h=-1&s=1"
+        alt="Gedung Sate Bandung"
+        class="w-32 h-32 object-cover rounded-full mx-auto"
+      />
+      <p class="mt-3 font-medium">Bandung</p>
+    </div>
+
+    <!-- Surabaya -->
+    <div class="text-center">
+      <img
+        src="https://cdn.rri.co.id/berita/Surabaya/o/1730210688531-suro_boyo/7tmxi2iipw59pxj.jpeg"
+        alt="Patung Suro dan Boyo"
+        class="w-32 h-32 object-cover rounded-full mx-auto"
+      />
+      <p class="mt-3 font-medium">Surabaya</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile" class="px-8 py-20 border-t">
+  <div class="bg-gray-100 p-10 mb-10 text-center">
+    <h2 class="text-2xl font-bold">Our Company</h2>
+  </div>
+
+  <h3 class="font-bold text-lg mb-2">About the Company</h3>
+  <p class="mb-6">
+    We are a digital company engaged in the development of modern and responsive websites.
+  </p>
+
+  <h3 class="font-bold text-lg mb-2">Vision</h3>
+  <p class="mb-6">Becoming a trusted technology company.</p>
+
+  <h3 class="font-bold text-lg mb-2">Mission</h3>
+  <ul class="list-disc ml-6">
+    <li>Producing quality products.</li>
+    <li>Prioritizing user experience.</li>
+    <li>Continuously innovating.</li>
+  </ul>
+</section>
+
+<!-- MESSAGE US -->
+<section id="message" class="px-8 py-20 border-t">
+  <h2 class="text-xl font-bold mb-6">Message Us</h2>
+
+  <div class="flex gap-10 flex-wrap">
+    <form id="messageForm" class="w-80 space-y-4">
+      
+      <div>
+        <label class="block">Name</label>
+        <input type="text" id="name" class="input" required>
+      </div>
+
+      <div>
+        <label class="block">Email</label>
+        <input type="email" id="email" class="input" required>
+      </div>
+
+      <div>
+        <label class="block">Date of Birth</label>
+        <input type="date" id="dob" class="input" required>
+      </div>
+
+      <div>
+        <label class="block mb-1">Gender</label>
+        <label class="mr-4">
+          <input type="radio" name="gender" value="Male" required> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="Female"> Female
+        </label>
+      </div>
+
+      <div>
+        <label class="block">Message</label>
+        <textarea id="messageText" class="input" required></textarea>
+      </div>
+
+      <button type="submit" class="border px-4 py-1 w-full">
+        Submit
+      </button>
+    </form>
+
+    <div id="result" class="border p-4 w-80 text-sm"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-right text-xs px-8 py-4 border-t">
+  © 2025 Rafid Company. All rights reserved.
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
